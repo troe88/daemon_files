@@ -22,7 +22,11 @@
 *.a
 *.lib
 
+#
+*.d
+
 # Executables
 *.exe
 *.out
 *.app
+Debug/daemon_files
