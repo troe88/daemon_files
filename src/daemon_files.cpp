@@ -254,9 +254,9 @@ int main(int argc, char **argv) {
 		setsid();
 //		chdir("/");
 
-//		close(STDIN_FILENO);
-//		close(STDOUT_FILENO);
-//		close(STDERR_FILENO);
+		close(STDIN_FILENO);
+		close(STDOUT_FILENO);
+		close(STDERR_FILENO);
 
 		signal(SIGHUP, signal_handler);
 		signal(SIGTERM, signal_handler);
